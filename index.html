@@ -1,47 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js" ></script>
     <title>
-
+        Registration-Form
     </title>
     <meta charset="utf-8">
 </head>
 
-<body>
+<body style="background-image:linear-gradient(to right,#ff512f,#dd2476)">
+    <div id="main">
 
-<form>
-    <div>
-        <pre>
+        
+
+<form id="form" name="form" action="formsubmitted.html" onsubmit="return validation()" >
+         <div id="title">
+            <b>Registration form</b>
+        </div>
+    <div id="div1">
+        <pre id="fontdiv1">
             Name                        :
+
             Password                    :
+
             Address                     :
+
+          
+
             Country                     :
+
+
             Gender                      :
-            Languages known             :
+
+            Languages known           :
         </pre>
 
 
     </div>
 
 
-    <div>
-                <input type="text" name="username" class="form2" placeholder="username">
-        <input type="password" name="passwd" class="form2" placeholder="password">
-        <textarea type="address" name="address" class="form2" placeholder="address"></textarea>
-        <select name="country" class="form2">
-            <option>india</option>
-             <option>china</option> <option>S.korea</option> <option>Afghanistan</option>
-        </select>
-        <input type="radio" name="gender" class="form2" value="male">male&nbsp;<input type="radio" name="gender" class="form2" value="female">female&nbsp;<input type="radio" name="gender" class="form2" value="other">other</input>
+    <div id="div2"><pre id ="fontdiv2">
+<input type="text" name="username" class="name" placeholder="username">
 
-        <input type="checkbox" value="hindi" name="language" class="form2">Hindi<br>
-       <input type="checkbox" value="hindi" name="language" class="form2">English<br>
-        <input type="checkbox" value="hindi" name="language" class="form2">French
+<input type="password" name="passwd" class="pass" placeholder="password">
+
+<textarea type="address" name="address" class="add" placeholder="address"></textarea>
+
+<select name="country" class="country">
+                <option disabled selected> select the nation</option>
+                <option>india</option>
+                <option>china</option> <option>S.korea</option> <option>Afghanistan</option>
+</select>
+<div class="radiodiv">
+<input type="radio" name="gender"  value="male">male&nbsp;<input type="radio" name="gender" value="female">female&nbsp;<input type="radio" name="gender"  value="other">other
+</div>
+<div id="langdiv">
+<input type="checkbox" value="hindi" name="language" class="lang">hindi     <input type="checkbox" value="englis" name="language" class="lang">English  <input type="checkbox" value="french" name="language" class="lang">French
+</div>
+</pre>
+    </div>
+
+
+    <div id="subdiv">
+        <input onclick="validation()" type="submit" name="submit" value="submit" id="submit">
+        <input type="reset" name="reset" value="reset" id="reset">
+
     </div>
 
 </form>
 
-
+</div>
 
 </body>
 
