@@ -16,7 +16,7 @@
 
 <form id="form" name="form" action="formsubmitted.html" onsubmit="return validation()" >
          <div id="title">
-            <b>Registration form</b>
+            <b id="reg">Registration form</b>
         </div>
     <div id="div1">
         <pre id="fontdiv1">
@@ -48,9 +48,9 @@
 <textarea type="address" name="address" class="add" placeholder="address"></textarea>
 
 <select name="country" class="country">
-                <option disabled selected> select the nation</option>
-                <option>india</option>
-                <option>china</option> <option>S.korea</option> <option>Afghanistan</option>
+                <option  selected> Select a nation</option>
+                <option value="india">india</option>
+                <option value="china">china</option> <option value="korea">S.korea</option> <option value="Afghanistan">Afghanistan</option>
 </select>
 <div class="radiodiv">
 <input type="radio" name="gender"  value="male">male&nbsp;<input type="radio" name="gender" value="female">female&nbsp;<input type="radio" name="gender"  value="other">other
@@ -63,7 +63,7 @@
 
 
     <div id="subdiv">
-        <input onclick="validation()" type="submit" name="submit" value="submit" id="submit">
+        <input onclick="validation()" onmouseover="hover()" onmouseout="nothover()" type="submit" name="submit" value="submit" id="submit">
         <input type="reset" name="reset" value="reset" id="reset">
 
     </div>
